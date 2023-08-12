@@ -1,0 +1,19 @@
+name: MobsLite
+version: 1.0.0-INDEV
+description: "A simple and lightweight Mobs plugin"
+author: "TokyoPanda, based on Mobs by tgwaste"
+
+api: 5.0.0
+src-namespace-prefix: MobsLite
+main: MobsLite\MobsLite
+
+permissions:
+  mobslite.kill:
+    description: "/mkill"
+    default: false
+  mobslite.summon:
+    description: "/msummon"
+    default: false
+  mobslite.list:
+    description: "/mlist"
+    default: false
