@@ -10,6 +10,7 @@ use MobsLite\MobsLite;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
 
 class summonCommand extends Command
 {
@@ -43,5 +44,10 @@ class summonCommand extends Command
                 $sender->sendMessage("§8» §e/msummon [mobName] [amount]");
             }
         }
+    }
+
+    public function getOwningPlugin(): Plugin
+    {
+        return $this->plugin;
     }
 }

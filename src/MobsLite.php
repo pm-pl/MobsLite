@@ -34,9 +34,9 @@ class MobsLite extends PluginBase
     public function registerCommands(): void
     {
         $commands = [
-            "kill" => new killCommand(),
+            "kill" => new killCommand($this),
             "summon" => new summonCommand($this),
-            "list" => new listCommand()
+            "list" => new listCommand($this)
         ];
 
         $commandMap = $this->getServer()->getCommandMap();

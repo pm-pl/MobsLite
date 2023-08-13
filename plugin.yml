@@ -10,10 +10,10 @@ main: MobsLite\MobsLite
 permissions:
   mobslite.kill:
     description: "/mkill"
-    default: false
+    default: op
   mobslite.summon:
     description: "/msummon"
-    default: false
+    default: op
   mobslite.list:
     description: "/mlist"
-    default: false
+    default: op
