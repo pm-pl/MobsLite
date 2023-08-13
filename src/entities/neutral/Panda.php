@@ -14,11 +14,11 @@ class Panda extends AbstractMob
 {
     const TYPE_ID = EntityIds::PANDA;
 
-    const HEALTH = 20;
-    const MOVEMENT_SPEED = 0.15;
+    protected int $health = 20;
+    protected float $speed = 0.15;
 
-    const ENTITY_SIZE_HEIGHT = 1.25;
-    const ENTITY_SIZE_WIDTH = 1.3;
+    protected float $entitySizeHeigth = 1.25;
+    protected float $entitySizeWidth = 1.3;
 
     public function getDrops(): array
     {

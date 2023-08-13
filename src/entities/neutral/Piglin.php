@@ -14,11 +14,11 @@ class Piglin extends AbstractMob
 {
     const TYPE_ID = EntityIds::PIGLIN;
 
-    const HEALTH = 16;
-    const MOVEMENT_SPEED = 0.35;
+    protected int $health = 16;
+    protected float $speed = 0.35;
 
-    const ENTITY_SIZE_HEIGHT = 1.95;
-    const ENTITY_SIZE_WIDTH = 0.6;
+    protected float $entitySizeHeigth = 1.95;
+    protected float $entitySizeWidth = 0.6;
 
     public function getDrops(): array
     {

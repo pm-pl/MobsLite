@@ -11,11 +11,11 @@ class Silverfish extends AbstractMob
 {
     const TYPE_ID = EntityIds::SILVERFISH;
 
-    const HEALTH = 8;
-    const MOVEMENT_SPEED = 0.4;
+    protected int $health = 8;
+    protected float $speed = 0.4;
 
-    const ENTITY_SIZE_HEIGHT = 0.3;
-    const ENTITY_SIZE_WIDTH = 0.4;
+    protected float $entitySizeHeigth = 0.3;
+    protected float $entitySizeWidth = 0.4;
 
     public function getXpDropAmount(): int
     {

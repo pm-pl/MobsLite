@@ -11,12 +11,12 @@ class Parrot extends AbstractMob
 {
     const TYPE_ID = EntityIds::PARROT;
 
-    const HEALTH = 6;
-    const MOVEMENT_SPEED = 1.2;
-    const GRAVITY = false;
+    protected int $health = 6;
+    protected float $speed = 1.2;
+    protected bool $gravityMob = false;
 
-    const ENTITY_SIZE_HEIGHT = 0.9;
-    const ENTITY_SIZE_WIDTH = 0.5;
+    protected float $entitySizeHeigth = 0.9;
+    protected float $entitySizeWidth = 0.5;
 
 
 }

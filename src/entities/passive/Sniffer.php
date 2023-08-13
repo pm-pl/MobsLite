@@ -14,11 +14,11 @@ class Sniffer extends AbstractMob
      */
     const TYPE_ID = EntityIds::SNIFFER;
 
-    const HEALTH = 30;
-    const MOVEMENT_SPEED = 0.2;
+    protected int $health = 30;
+    protected float $speed = 0.2;
 
-    const ENTITY_SIZE_HEIGHT = 1.3;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 1.3;
+    protected float $entitySizeWidth = 0.9;
 
 
     public function getXpDropAmount(): int

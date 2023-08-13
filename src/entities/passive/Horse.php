@@ -11,11 +11,11 @@ class Horse extends AbstractMob
 {
     const TYPE_ID = EntityIds::HORSE;
 
-    const HEALTH = 15;
-    const MOVEMENT_SPEED = 1.0;
+    protected int $health = 15;
+    protected float $speed = 1.0;
 
-    const ENTITY_SIZE_HEIGHT = 1.6;
-    const ENTITY_SIZE_WIDTH = 1.4;
+    protected float $entitySizeHeigth = 1.6;
+    protected float $entitySizeWidth = 1.4;
 
 
 }

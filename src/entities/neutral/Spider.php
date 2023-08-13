@@ -14,13 +14,13 @@ class Spider extends AbstractMob
 {
     const TYPE_ID = EntityIds::SPIDER;
 
-    const HEALTH = 16;
-    const MOVEMENT_SPEED = 0.3;
+    protected int $health = 16;
+    protected float $speed = 0.3;
 
-    const ENTITY_SIZE_HEIGHT = 0.9;
-    const ENTITY_SIZE_WIDTH = 1.4;
+    protected float $entitySizeHeigth = 0.9;
+    protected float $entitySizeWidth = 1.4;
 
-    const CAN_CLIMB = true;
+    protected bool $canClimb = true;
 
     public function getDrops(): array
     {

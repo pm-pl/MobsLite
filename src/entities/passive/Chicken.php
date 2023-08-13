@@ -14,11 +14,11 @@ class Chicken extends AbstractMob
 {
     const TYPE_ID = EntityIds::CHICKEN;
 
-    const HEALTH = 4;
-    const MOVEMENT_SPEED = 0.25;
+    protected int $health = 4;
+    protected float $speed = 0.25;
 
-    const ENTITY_SIZE_HEIGHT = 0.7;
-    const ENTITY_SIZE_WIDTH = 0.4;
+    protected float $entitySizeHeigth = 0.7;
+    protected float $entitySizeWidth = 0.4;
 
     public function getDrops(): array
     {

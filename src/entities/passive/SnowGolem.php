@@ -14,11 +14,11 @@ class SnowGolem extends AbstractMob
 {
     const TYPE_ID = EntityIds::SNOW_GOLEM;
 
-    const HEALTH = 4;
-    const MOVEMENT_SPEED = 0.15;
+    protected int $health = 4;
+    protected float $speed = 0.15;
 
-    const ENTITY_SIZE_HEIGHT = 1.7;
-    const ENTITY_SIZE_WIDTH = 0.7;
+    protected float $entitySizeHeigth = 1.7;
+    protected float $entitySizeWidth = 0.7;
 
     public function getDrops(): array
     {

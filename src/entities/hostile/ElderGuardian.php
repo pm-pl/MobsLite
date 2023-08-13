@@ -14,11 +14,11 @@ class ElderGuardian extends AbstractMob
 {
     const TYPE_ID = EntityIds::ELDER_GUARDIAN;
 
-    const HEALTH = 80;
-    const MOVEMENT_SPEED = 0.3;
+    protected int $health = 80;
+    protected float $speed = 0.3;
 
-    const ENTITY_SIZE_HEIGHT = 1.99;
-    const ENTITY_SIZE_WIDTH = 1.45;
+    protected float $entitySizeHeigth = 1.99;
+    protected float $entitySizeWidth = 1.45;
 
     public function getDrops(): array
     {

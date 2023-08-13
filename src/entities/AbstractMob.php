@@ -15,13 +15,13 @@ abstract class AbstractMob extends Living
 {
     const TYPE_ID = "";
 
-    const HEALTH = 10;
-    const SPEED = 1.00;
-    const CAN_CLIMB = false;
-    const GRAVITY = true;
+    protected int $health = 10;
+    protected float $speed = 1.00;
+    protected bool $canClimb = false;
+    protected bool $gravityMob = true;
 
-    const ENTITY_SIZE_HEIGHT = 2.5;
-    const ENTITY_SIZE_WIDTH = 1.0;
+    protected float $entitySizeHeigth = 2.5;
+    protected float $entitySizeWidth = 1.0;
 
     public int $attackDelay;
     public Vector3 $defaultLook;
@@ -38,11 +38,11 @@ abstract class AbstractMob extends Living
 
     public function initEntity(CompoundTag $nbt): void
     {
-        $this->setHealth(self::HEALTH);
-        $this->setMaxHealth(self::HEALTH);
-        $this->setMovementSpeed(self::SPEED);
-        $this->setCanClimb(self::CAN_CLIMB);
-        $this->setHasGravity(self::GRAVITY);
+        $this->setHealth($this->health);
+        $this->setMaxHealth($this->health);
+        $this->setMovementSpeed($this->speed);
+        $this->setCanClimb($this->canClimb);
+        $this->setHasGravity($this->gravityMob);
 
         $this->setNoClientPredictions(false);
         $this->setCanSaveWithChunk(false);
@@ -68,7 +68,7 @@ abstract class AbstractMob extends Living
 
     protected function getInitialSizeInfo(): EntitySizeInfo
     {
-        return new EntitySizeInfo(self::ENTITY_SIZE_HEIGHT, self::ENTITY_SIZE_WIDTH);
+        return new EntitySizeInfo($this->entitySizeHeigth, $this->entitySizeWidth);
     }
 
     public function knockBack(float $x, float $z, float $force = 0.4, ?float $verticalLimit = 0.4): void
@@ -119,7 +119,7 @@ abstract class AbstractMob extends Living
     public function _isSwimming(): bool
     {
         $mobs = [
-            "Axolotl", "Frog", "GlowSquid", "Pufferfish", "Salmon", "Squid", "Tadpole", "TropicalFish", "Turtle"
+            "Axolotl", "Frog", "GlowSquid", "PufferFish", "Salmon", "Squid", "Tadpole", "TropicalFish", "Turtle"
         ];
         return in_array($this->getName(), $mobs);
     }

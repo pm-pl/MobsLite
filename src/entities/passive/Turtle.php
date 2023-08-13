@@ -14,11 +14,11 @@ class Turtle extends AbstractMob
 {
     const TYPE_ID = EntityIds::TURTLE;
 
-    const HEALTH = 30;
-    const MOVEMENT_SPEED = 0.12;
+    protected int $health = 30;
+    protected float $speed = 0.12;
 
-    const ENTITY_SIZE_HEIGHT = 0.4;
-    const ENTITY_SIZE_WIDTH = 1.2;
+    protected float $entitySizeHeigth = 0.4;
+    protected float $entitySizeWidth = 1.2;
 
     public function getDrops(): array
     {

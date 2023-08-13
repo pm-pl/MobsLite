@@ -14,11 +14,11 @@ class IronGolem extends AbstractMob
 {
     const TYPE_ID = EntityIds::IRON_GOLEM;
 
-    const HEALTH = 100;
-    const MOVEMENT_SPEED = 0.25;
+    protected int $health = 100;
+    protected float $speed = 0.25;
 
-    const ENTITY_SIZE_HEIGHT = 2.7;
-    const ENTITY_SIZE_WIDTH = 1.4;
+    protected float $entitySizeHeigth = 2.7;
+    protected float $entitySizeWidth = 1.4;
 
     public function getDrops(): array
     {

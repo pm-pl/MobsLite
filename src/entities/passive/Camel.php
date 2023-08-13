@@ -11,11 +11,11 @@ class Camel extends AbstractMob
 {
     const TYPE_ID = EntityIds::CAMEL;
 
-    const HEALTH = 15;
-    const MOVEMENT_SPEED = 0.45;
+    protected int $health = 15;
+    protected float $speed = 0.45;
 
-    const ENTITY_SIZE_HEIGHT = 1.8;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 1.8;
+    protected float $entitySizeWidth = 0.9;
 
 
     public function getXpDropAmount(): int

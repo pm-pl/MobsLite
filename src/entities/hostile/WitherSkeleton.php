@@ -14,11 +14,11 @@ class WitherSkeleton extends AbstractMob
 {
     const TYPE_ID = EntityIds::WITHER_SKELETON;
 
-    const HEALTH = 20;
-    const MOVEMENT_SPEED = 0.25;
+    protected int $health = 20;
+    protected float $speed = 0.25;
 
-    const ENTITY_SIZE_HEIGHT = 2.4;
-    const ENTITY_SIZE_WIDTH = 0.7;
+    protected float $entitySizeHeigth = 2.4;
+    protected float $entitySizeWidth = 0.7;
 
     public function getDrops(): array
     {

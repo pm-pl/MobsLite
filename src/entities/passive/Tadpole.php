@@ -11,11 +11,11 @@ class Tadpole extends AbstractMob
 {
     const TYPE_ID = EntityIds::TADPOLE;
 
-    const HEALTH = 1;
-    const MOVEMENT_SPEED = 1.0;
+    protected int $health = 1;
+    protected float $speed = 1.0;
 
-    const ENTITY_SIZE_HEIGHT = 0.11;
-    const ENTITY_SIZE_WIDTH = 0.11;
+    protected float $entitySizeHeigth = 0.11;
+    protected float $entitySizeWidth = 0.11;
 
 
 }

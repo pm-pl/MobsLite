@@ -11,9 +11,9 @@ class Villager extends AbstractMob
 {
     const TYPE_ID = EntityIds::VILLAGER_V2;
 
-    const HEALTH = 20;
-    const MOVEMENT_SPEED = 0.5;
+    protected int $health = 20;
+    protected float $speed = 0.5;
 
-    const ENTITY_SIZE_HEIGHT = 1.95;
-    const ENTITY_SIZE_WIDTH = 0.6;
+    protected float $entitySizeHeigth = 1.95;
+    protected float $entitySizeWidth = 0.6;
 }

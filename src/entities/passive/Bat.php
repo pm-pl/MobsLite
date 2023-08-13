@@ -11,12 +11,12 @@ class Bat extends AbstractMob
 {
     const TYPE_ID = EntityIds::BAT;
 
-    const HEALTH = 6;
-    const MOVEMENT_SPEED = 0.8;
-    const GRAVITY = false;
+    protected int $health = 6;
+    protected float $speed = 0.8;
+    protected bool $gravityMob = false;
 
-    const ENTITY_SIZE_HEIGHT = 0.5;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 0.5;
+    protected float $entitySizeWidth = 0.9;
 
 
 }

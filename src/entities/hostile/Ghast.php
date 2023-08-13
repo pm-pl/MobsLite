@@ -14,13 +14,13 @@ class Ghast extends AbstractMob
 {
     const TYPE_ID = EntityIds::GHAST;
 
-    const HEALTH = 10;
-    const MOVEMENT_SPEED = 0.001;
+    protected int $health = 10;
+    protected float $speed = 0.001;
 
-    const ENTITY_SIZE_HEIGHT = 4.0;
-    const ENTITY_SIZE_WIDTH = 4.0;
+    protected float $entitySizeHeigth = 4.0;
+    protected float $entitySizeWidth = 4.0;
 
-    const GRAVITY = false;
+    protected bool $gravityMob = false;
 
     public function getDrops(): array
     {

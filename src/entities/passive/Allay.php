@@ -11,11 +11,11 @@ class Allay extends AbstractMob
 {
     const TYPE_ID = EntityIds::ALLAY;
 
-    const HEALTH = 14;
-    const MOVEMENT_SPEED = 0.5;
+    protected int $health = 14;
+    protected float $speed = 0.5;
 
-    const ENTITY_SIZE_HEIGHT = 0.5;
-    const ENTITY_SIZE_WIDTH = 0.25;
+    protected float $entitySizeHeigth = 0.5;
+    protected float $entitySizeWidth = 0.25;
 
 
 }

@@ -14,11 +14,11 @@ class Goat extends AbstractMob
 {
     const TYPE_ID = EntityIds::GOAT;
 
-    const HEALTH = 10;
-    const MOVEMENT_SPEED = 0.15;
+    protected int $health = 10;
+    protected float $speed = 0.15;
 
-    const ENTITY_SIZE_HEIGHT = 1.3;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 1.3;
+    protected float $entitySizeWidth = 0.9;
 
     public function getDrops(): array
     {

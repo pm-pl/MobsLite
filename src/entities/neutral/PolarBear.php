@@ -11,9 +11,9 @@ class PolarBear extends AbstractMob
 {
     const TYPE_ID = EntityIds::POLAR_BEAR;
 
-    const HEALTH = 30;
-    const MOVEMENT_SPEED = 0.25;
+    protected int $health = 30;
+    protected float $speed = 0.25;
 
-    const ENTITY_SIZE_HEIGHT = 1.4;
-    const ENTITY_SIZE_WIDTH = 1.3;
+    protected float $entitySizeHeigth = 1.4;
+    protected float $entitySizeWidth = 1.3;
 }

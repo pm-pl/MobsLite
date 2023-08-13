@@ -14,14 +14,14 @@ class CaveSpider extends AbstractMob
 {
     const TYPE_ID = EntityIds::CAVE_SPIDER;
 
-    const HEALTH = 12;
-    const MOVEMENT_SPEED = 0.5;
+    protected int $health = 12;
+    protected float $speed = 0.5;
 
-    const ENTITY_SIZE_HEIGHT = 0.5;
-    const ENTITY_SIZE_WIDTH = 0.7;
+    protected float $entitySizeHeigth = 0.5;
+    protected float $entitySizeWidth = 0.7;
 
-    const CAN_CLIMB = true;
-    const CAN_CLIMB_WALLS = true;
+    protected bool $canClimb = true;
+    protected bool $canClimb_WALLS = true;
 
     public function getDrops(): array
     {

@@ -14,11 +14,11 @@ class Hoglin extends AbstractMob
 {
     const TYPE_ID = EntityIds::HOGLIN;
 
-    const HEALTH = 40;
-    const MOVEMENT_SPEED = 0.3;
+    protected int $health = 40;
+    protected float $speed = 0.3;
 
-    const ENTITY_SIZE_HEIGHT = 1.39;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 1.39;
+    protected float $entitySizeWidth = 0.9;
 
     public function getDrops(): array
     {

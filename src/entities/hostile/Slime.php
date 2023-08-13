@@ -14,11 +14,11 @@ class Slime extends AbstractMob
 {
     const TYPE_ID = EntityIds::SLIME;
 
-    const HEALTH = 4;
-    const MOVEMENT_SPEED = 0.45;
+    protected int $health = 4;
+    protected float $speed = 0.45;
 
-    const ENTITY_SIZE_HEIGHT = 0.7;
-    const ENTITY_SIZE_WIDTH = 0.6;
+    protected float $entitySizeHeigth = 0.7;
+    protected float $entitySizeWidth = 0.6;
 
     public function getDrops(): array
     {

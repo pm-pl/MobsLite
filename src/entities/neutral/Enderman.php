@@ -14,11 +14,11 @@ class Enderman extends AbstractMob
 {
     const TYPE_ID = EntityIds::ENDERMAN;
 
-    const HEALTH = 40;
-    const MOVEMENT_SPEED = 0.3;
+    protected int $health = 40;
+    protected float $speed = 0.3;
 
-    const ENTITY_SIZE_HEIGHT = 2.9;
-    const ENTITY_SIZE_WIDTH = 0.6;
+    protected float $entitySizeHeigth = 2.9;
+    protected float $entitySizeWidth = 0.6;
 
     public function getDrops(): array
     {

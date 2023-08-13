@@ -14,11 +14,11 @@ class GlowSquid extends AbstractMob
 {
     const TYPE_ID = EntityIds::GLOW_SQUID;
 
-    const HEALTH = 10;
-    const MOVEMENT_SPEED = 0.1;
+    protected int $health = 10;
+    protected float $speed = 0.1;
 
-    const ENTITY_SIZE_HEIGHT = 0.8;
-    const ENTITY_SIZE_WIDTH = 0.8;
+    protected float $entitySizeHeigth = 0.8;
+    protected float $entitySizeWidth = 0.8;
 
     public function getDrops(): array
     {

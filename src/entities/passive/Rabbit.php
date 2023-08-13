@@ -14,11 +14,11 @@ class Rabbit extends AbstractMob
 {
     const TYPE_ID = EntityIds::RABBIT;
 
-    const HEALTH = 3;
-    const MOVEMENT_SPEED = 0.5;
+    protected int $health = 3;
+    protected float $speed = 0.5;
 
-    const ENTITY_SIZE_HEIGHT = 0.4;
-    const ENTITY_SIZE_WIDTH = 0.2;
+    protected float $entitySizeHeigth = 0.4;
+    protected float $entitySizeWidth = 0.2;
 
     public function getDrops(): array
     {

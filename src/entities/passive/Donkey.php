@@ -11,11 +11,11 @@ class Donkey extends AbstractMob
 {
     const TYPE_ID = EntityIds::DONKEY;
 
-    const HEALTH = 15;
-    const MOVEMENT_SPEED = 1.1;
+    protected int $health = 15;
+    protected float $speed = 1.1;
 
-    const ENTITY_SIZE_HEIGHT = 1.6;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 1.6;
+    protected float $entitySizeWidth = 0.9;
 
 
     public function getXpDropAmount(): int

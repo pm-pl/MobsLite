@@ -11,11 +11,11 @@ class Warden extends AbstractMob
 {
     const TYPE_ID = EntityIds::WARDEN;
 
-    const HEALTH = 500;
-    const MOVEMENT_SPEED = 0.3;
+    protected int $health = 500;
+    protected float $speed = 0.3;
 
-    const ENTITY_SIZE_HEIGHT = 2.9;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 2.9;
+    protected float $entitySizeWidth = 0.9;
 
     public function getXpDropAmount(): int
     {

@@ -14,11 +14,11 @@ class Creeper extends AbstractMob
 {
     const TYPE_ID = EntityIds::CREEPER;
 
-    const HEALTH = 20;
-    const MOVEMENT_SPEED = 0.25;
+    protected int $health = 20;
+    protected float $speed = 0.25;
 
-    const ENTITY_SIZE_HEIGHT = 1.7;
-    const ENTITY_SIZE_WIDTH = 0.6;
+    protected float $entitySizeHeigth = 1.7;
+    protected float $entitySizeWidth = 0.6;
 
     public function getDrops(): array
     {

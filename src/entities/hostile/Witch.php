@@ -15,11 +15,11 @@ class Witch extends AbstractMob
 {
     const TYPE_ID = EntityIds::WITCH;
 
-    const HEALTH = 26;
-    const MOVEMENT_SPEED = 0.25;
+    protected int $health = 26;
+    protected float $speed = 0.25;
 
-    const ENTITY_SIZE_HEIGHT = 1.95;
-    const ENTITY_SIZE_WIDTH = 0.6;
+    protected float $entitySizeHeigth = 1.95;
+    protected float $entitySizeWidth = 0.6;
 
     public function getDrops(): array
     {

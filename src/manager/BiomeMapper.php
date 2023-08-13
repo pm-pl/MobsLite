@@ -26,7 +26,7 @@ class BiomeMapper
         "BEACH" => ["Silverfish", "Turtle"],
         "DESERT" => ["Camel", "Husk", "TraderLlama"],
         "SAVANNA" => ["Donkey", "Horse", "Mule", "TraderLlama"],
-        "OCEAN" => ["Cod", "Dolphin", "Drowned", "ElderGuardian", "Guardian", "Pufferfish", "Squid"],
+        "OCEAN" => ["Cod", "Dolphin", "Drowned", "ElderGuardian", "Guardian", "PufferFish", "Squid"],
         "WARM OCEAN" => ["TropicalFish"],
         "FROZEN OCEAN" => ["PolarBear"],
         "DEEP OCEAN" => ["GlowSquid"],

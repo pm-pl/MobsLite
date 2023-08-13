@@ -14,11 +14,11 @@ class Strider extends AbstractMob
 {
     const TYPE_ID = EntityIds::STRIDER;
 
-    const HEALTH = 20;
-    const MOVEMENT_SPEED = 0.15;
+    protected int $health = 20;
+    protected float $speed = 0.15;
 
-    const ENTITY_SIZE_HEIGHT = 1.7;
-    const ENTITY_SIZE_WIDTH = 0.9;
+    protected float $entitySizeHeigth = 1.7;
+    protected float $entitySizeWidth = 0.9;
 
     public function getDrops(): array
     {

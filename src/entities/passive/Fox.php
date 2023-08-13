@@ -11,11 +11,11 @@ class Fox extends AbstractMob
 {
     const TYPE_ID = EntityIds::FOX;
 
-    const HEALTH = 10;
-    const MOVEMENT_SPEED = 0.8;
+    protected int $health = 10;
+    protected float $speed = 0.8;
 
-    const ENTITY_SIZE_HEIGHT = 0.6;
-    const ENTITY_SIZE_WIDTH = 0.7;
+    protected float $entitySizeHeigth = 0.6;
+    protected float $entitySizeWidth = 0.7;
 
 
     public function getXpDropAmount(): int
